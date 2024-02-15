@@ -4,12 +4,13 @@ import React from 'react'
 const Nav = () => {
   const age = 20
   return (
-    <div className='fixed top-0 w-full p-2 flex bg-slate-600 justify-end gap-4 text-white pr-8 z-30'>
+    <div className='top-0 sticky w-full p-2 flex bg-slate-600 justify-end gap-4 text-white pr-8 z-30'>
       <Link href='/carousel'>Carousel</Link>
       <Link href='/airbnbUi'>AirBnb</Link>
-      <Link href='/'>Home</Link>
+
       <Link href='/quill'>Quill</Link>
       <Link href='/signup'>SignUp</Link>
+      <Link href='/'>Home</Link>
     </div>
   )
 }

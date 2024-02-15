@@ -4,8 +4,6 @@ import Form from '@components/Form'
 
 const Home = () => {
  
-    const [count, setCount] = useState(0)
-
 
     const [form, setForm] = useState({
       username:'',
@@ -17,13 +15,13 @@ const Home = () => {
     }
     const name = 'Sakun'
   return (
-    <div className='flex min-h-screen'>
-      <Form 
-        title='Login' 
-        button_color='#7A5BB3' 
-        button_text='Login'
-        non_button_text='Register'
-      />
+    <div className='flex p-8 min-h-96'>
+     <div className='my-auto text-xl font-medium'>
+        Hello and welcome to my website that showcases my various UI projects.
+        I made this website to showcase my UI projects and to learn Next.js.
+        I made login and signup forms using Tailwind CSS and React components system to
+        make them reusable. I also made a carousel. Most amazingly, I recreated the entire Airbnb landing page using Tailwind CSS.
+     </div>
     </div>
   )
 }
