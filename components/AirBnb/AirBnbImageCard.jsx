@@ -1,15 +1,16 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import Carousel from '@components/Carousel'
 
 const AirBnbImageCard = ({ images, place, rating, distance, dates, price }) => {
   return (
-    <div className='flex flex-col'>
+    <motion.div className='flex flex-col' initial={{ opacity: 0, y:-20 }} animate={{ opacity: 1, y:0 }} transition={{ duration: 1 }}>
 
       <Carousel>
-              <img className='h-64 w-full object-cover' src={`assets/${images[0]}.webp`} alt='airbnb' />
-              <img className='w-full h-64 object-cover' src={`assets/${images[1]}.webp`} alt='airbnb' />
-              <img className='w-full h-64 object-cover' src={`assets/${images[2]}.webp`} alt='airbnb' />
-              <img className='w-full h-64 object-cover' src={`assets/${images[3]}.webp`} alt='airbnb' />
+        <img className='h-64 w-full object-cover' src={`assets/${images[0]}.webp`} alt='airbnb' />
+        <img className='w-full h-64 object-cover' src={`assets/${images[1]}.webp`} alt='airbnb' />
+        <img className='w-full h-64 object-cover' src={`assets/${images[2]}.webp`} alt='airbnb' />
+        <img className='w-full h-64 object-cover' src={`assets/${images[3]}.webp`} alt='airbnb' />
       </Carousel>
 
 
@@ -30,7 +31,7 @@ const AirBnbImageCard = ({ images, place, rating, distance, dates, price }) => {
         <p className='text-sm font-medium text-gray-700'>{dates}</p>
         <p className='text-md font-medium text-gray-800'>$ {price} night</p>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
