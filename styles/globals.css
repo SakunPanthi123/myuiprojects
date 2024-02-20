@@ -3,7 +3,9 @@
 @tailwind components;
 
 .hide-scrollbar::-webkit-scrollbar {
-    display: none;
+/* only hide bottom scroll bar */
+
+  display: none;
   }
 
   .shadow-bottom {

@@ -5,6 +5,7 @@ const Nav = () => {
   const age = 20
   return (
     <div className='top-0 sticky w-full p-2 flex bg-slate-600 justify-end gap-4 text-white pr-8 z-30'>
+      <Link href='/todo'>Todo New</Link>
       <Link href='/hamroKrishi'>Hamro Krishi</Link>
       <Link href='/gpu'>GPU</Link>
       <Link href='/todoapp'>Todo App</Link>
